@@ -1,0 +1,25 @@
+{
+  "name": "inventario",
+  "version": "1.0.0",
+  "description": "Microservicio Inventario para AgroFlow",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.8",
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.21.2",
+    "mysql2": "^3.14.3",
+    "sequelize": "^6.31.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,2 @@
+para correr
+npm install

@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ms-central
+  datasource:
+    url: jdbc:postgresql://localhost:5432/central_db
+    username: postgres
+    password: admin123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  rabbitmq:
+    host: localhost # o la IP/dirección donde corre RabbitMQ
+    port: 5672 # puerto por defecto RabbitMQ
+    username: admin # pon aquí el usuario válido para RabbitMQ
+    password: admin # la contraseña correspondiente
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
